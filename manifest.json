@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Kill FB Timeline",
+    "version": "1.0",
+    "description": "A simple Chrome extension to kill FB timeline",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://www.facebook.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
